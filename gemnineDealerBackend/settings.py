@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-0$cu@f8z!!k00es+k-ndv!at=f9ngh-6l_hkbesufbhpa$asd&'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -183,22 +183,22 @@ logging.config.dictConfig(LOGGING)
 
 
 #THIS IS FOR CRENDENTIALS CONFIGURATION
-TWILIO_ACCOUNT_SID = "AC69ec59aa11fb7a3c1a4b197b77f798ab"
-TWILIO_AUTH_TOKEN = "267ab3bff755dbfe655352bcb6db314f"
+TWILIO_ACCOUNT_SID = ""
+TWILIO_AUTH_TOKEN = ""
 
 #FCM CONFIGURATION
-FCM_API_KEY = "AAAAHW6TFkI:APA91bFDUa0zCqnYafqj0AV3lWZ0HxGA4T8tM_wqTQAWK9LpQmRrnhAOy-mLHpDrkVRbBDFb3qTWE7USnqhlOGRk1oPeRWGODNvHMsCpMpmKTyqLrpnASFg2oqkfJc6HhQnWicXMx4NG"
+FCM_API_KEY = ""
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 # Django Gmail SMTP server configuration
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_BACKEND = ''
+EMAIL_HOST = ''
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = os.getenv("KWK_EMAIL_HOST_USE", "noreply.gemnine@gmail.com")
-EMAIL_HOST_PASSWORD = os.getenv("KWK_EMAIL_HOST_PASSWORD", "gemnine@99110")
+EMAIL_HOST_USER = os.getenv("KWK_EMAIL_HOST_USE", "")
+EMAIL_HOST_PASSWORD = os.getenv("KWK_EMAIL_HOST_PASSWORD", "")
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 STATIC_URL = 'static/'
